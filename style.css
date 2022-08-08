@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color:  hsl(0, 0%, 81%);
+}
+
+html {
+    font-size: 13px;
+}
+
+/* Avatar images and caption */
+.block {
+    display: block;
+    margin-left: 70px;
+}
+
+.up {
+    margin-left: 70px;
+}
+
+img {
+    border-radius: 50%;
+    width: 30px;
+    position: absolute;
+    margin-left: 1.5rem;
+}
+
+/* The main container of the page */
+menu {
+    padding: 10px;
+}
+
+/* The container containing articles */
+.testimonial {
+    padding: 10px;
+    margin: 10px;
+}
+
+article {
+    padding: 20px;
+}
+
+/* 1st article */
+#first-article {
+    background-image: url(images/bg-pattern-quotation.svg);
+    border-radius: 13px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: hsl(263, 55%, 52%);
+}
+
+#first-article .up {
+    color:  hsl(210, 46%, 95%);
+}
+
+#first-article .block {
+    color:  hsl(0, 0%, 81%);;
+}
+
+#first-article p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+#first-article section {
+    color:  hsl(0, 0%, 81%);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+/* 2nd article */
+#second-article {
+    background-color:  hsl(217, 19%, 35%);
+    border-radius: 13px;
+}
+
+#second-article .up {
+    color:   hsl(210, 46%, 95%);
+}
+
+#second-article .block {
+    color:   hsl(0, 0%, 81%);
+}
+
+#second-article p {
+    color:  hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+#second-article section {
+    color:  hsl(0, 0%, 81%);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+/* 3rd article */
+#third-article {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 13px;
+}
+
+#third-article .up {
+    color: hsl(217, 19%, 50%);
+}
+
+#third-article .block {
+    color:  hsl(217, 19%, 35%);
+}
+
+#third-article p {
+    color: hsl(219, 29%, 14%);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+#third-article section {
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/* 4th article */
+#fourth-article {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 13px;
+}
+
+#fourth-article .up {
+    color: hsl(217, 19%, 50%);
+}
+
+#fourth-article .block {
+    color:  hsl(217, 19%, 35%);
+}
+
+#fourth-article p {
+    color: hsl(219, 29%, 14%);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+#fourth-article section {
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+/* 5th article */
+#fifth-article {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 13px;
+}
+
+#fifth-article .up {
+    color: hsl(217, 19%, 50%);
+}
+
+#fifth-article .block {
+    color:  hsl(217, 19%, 35%);
+}
+
+#fifth-article p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+#fifth-article section {
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+/* Truncating texts to suits the design */
+article p {
+  width: 200px;
+}
+
+#first-article p, #fifth-article p {
+    width: 470px;
+}
+
+section {
+   height: 70%;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   word-wrap: break-word;
+   width: 87%;
+}
+
+/* Introduction of grid for the page layouts */
+.testimonial-grid {
+    padding-block: 2rem;
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#first-article, #fifth-article {
+    grid-column: span 2;
+}
+
+#third-article {
+    background:  hsl(0, 0%, 100%) !important;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+a {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:375px) {
+    .testimonial-grid {
+        display:block;
+    }
+    #first-article p, #fifth-article p {
+        width: 257px;
+    }
+    .attribution {
+        padding: 10px;
+    }
+}
