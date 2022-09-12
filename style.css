@@ -9,7 +9,6 @@ body {
     width: 100%;
     background-color:  hsl(0, 0%, 81%);
     align-items:center;
-    display:flex;
 }
 
 html {
