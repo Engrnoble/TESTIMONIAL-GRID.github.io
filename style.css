@@ -16,6 +16,7 @@ html {
     font-family: 'Barlow', sans-serif;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap');
 
 /* Avatar images and caption */
 .block {
